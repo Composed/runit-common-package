@@ -4,7 +4,7 @@ packages:
     production: trusty-stable
 
 jobs:
-  runit_common:
+  runit-common:
     builder: "make"
     base: "quay.io/madebymany/build-bases:trusty"
     build_depends:
@@ -17,7 +17,7 @@ jobs:
           - runit
           - postfix
         repos:
-          - mxm-public
+          - composed-public
         promote_through:
           - unstable
           - stable
